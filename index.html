@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <!--폰트어썸 CDN : -->
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: pink;
+            height: 70px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            padding: 0 15px;
+        }
+
+        a:hover {
+            color: rgb(255, 0, 0);
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(250, 73, 109);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        main {
+            height: 500px;
+            background-image: url(../images/분홍구름.jpg);
+            background-size: cover;
+
+        }
+
+        #name {
+            position: relative;
+            top: 380px;
+            left: 45px;
+            font-size: 1em;
+            color: lightpink;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .ment {
+            position: relative;
+            top: 390px;
+            left: 45px;
+            font-size: 3em;
+            color: lightpink;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer {
+            background-color: lightpink;
+            color: rgb(250, 73, 109);
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-globe"></i></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="github.html">Github</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <p id="name"> made by Song Su Bin </p>
+        <div class="ment">WElCOME MY PAGE</div>
+    </main>
+    <footer>
+        <h4>If you like my page, please contact me
+            <i class="fa-solid fa-hand-holding-heart"></i>
+        </h4>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> e-mail </a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>phone</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <!--폰트어썸 CDN : -->
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: pink;
+            height: 70px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            padding: 0 15px;
+        }
+
+        a:hover {
+            color: rgb(255, 0, 0);
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(250, 73, 109);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        main{
+            background-color: rgb(255, 227, 232);
+            height: 500px;
+        }
+        button{
+            background-color: rgb(201, 229, 238);
+            color: rgb(250, 73, 109);
+            margin: 8px;
+            padding: 10px;
+            border-radius: 50%;
+            border-style:none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: lightblue;
+        }
+        footer {
+            background-color: lightpink;
+            color: rgb(250, 73, 109);
+            display: flex;
+            justify-content: space-between;
+        }
+        #myImage{
+            width: 800px;
+            padding: 20px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-globe"></i></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="github.html">Github</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <button id="project1">Project 1</button>
+        <button id="project2">Project 2</button> <br>
+        <img src="../images/학부생1.png" id="myImage"><br>
+        임시 프로젝트 이미지 삽입
+       
+        
+    </main>
+    <footer>
+        <h4>If you like my page, please contact me
+            <i class="fa-solid fa-hand-holding-heart"></i>
+        </h4>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> e-mail </a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>phone</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        let myImage = document.getElementById('myImage');
+        let project1 = document.getElementById('project1');
+        let project2 = document.getElementById('project2');
+
+        project1.onclick = changePic1; //함수 실행
+        project2.onclick = changePic2; //괄호 없음 395쪽
+        // 객체의 이벤트 리스너 프로퍼티에 리스너 등록
+
+        function changePic1(){
+            myImage.src = "../images/학부생1.png";
+        }
+        function changePic2(){
+            myImage.src = "../images/학부생2.png";
+        }
+    </script>
+</body>
+
+</html>
